@@ -3,131 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cornel Savai - Portfolio</title>
+    <title>[Your Name] - Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2C2C2C;
+            color: white;
         }
 
-        h1, h2, p {
-            text-align: center;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #2C2C2C;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .menu {
-            text-align: center;
+        header h1 {
+            font-size: 36px;
+            color: #FF4949;
         }
 
         nav ul {
-            list-style-type: none;
-            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 20px;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 15px;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: #333;
+            color: white;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
 
-        section {
-            margin: 40px 0;
+        nav ul li a:hover {
+            color: #FF4949;
         }
 
-        .skills, .projects, .experience {
-            text-align: left;
-            margin: 0 auto;
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 50px;
+            background-color: #333333;
+        }
+
+        .hero h2 {
+            font-size: 60px;
+            margin: 0;
+            color: #FF4949;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .hero img {
+            max-width: 400px;
+            border-radius: 8px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            color: white;
+            background-color: #FF4949;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #FF7373;
+        }
+
+        .about, .skills, .portfolio {
+            padding: 50px;
+            background-color: #2C2C2C;
+            text-align: center;
+        }
+
+        .about h3, .skills h3, .portfolio h3 {
+            font-size: 36px;
+            color: #FF4949;
+            margin-bottom: 20px;
+        }
+
+        .about p, .skills p {
+            font-size: 18px;
+            color: #BBBBBB;
             max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
         }
 
-        .skills ul, .experience ul, .projects ul {
-            list-style-type: none;
-            padding: 0;
+        .skills .progress-container {
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        .skills ul li, .experience ul li, .projects ul li {
-            margin: 10px 0;
+        .skills .progress-container div {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .skills .progress-container div span {
+            display: inline-block;
+            width: 150px;
+        }
+
+        .skills .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #444;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skills .progress-bar div {
+            height: 100%;
+            background-color: #FF4949;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .portfolio .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .portfolio .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            padding: 20px 50px;
+            text-align: center;
+            background-color: #333333;
+            color: #BBBBBB;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Cornel Savai</h1>
-        <p>Law Student | Virtual Assistant | Software Developer</p>
+        <h1>[Your Name]</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am Cornel Savai Ondego, a law student with a passion for software development, alternative dispute resolution, and virtual assistance. I have experience in various fields and am constantly seeking to learn and grow.</p>
+    <section class="hero">
+        <div>
+            <h2>Hello, I'm [Your Name]</h2>
+            <p>Creative Designer | Web Developer | [Your Profession]</p>
+            <div class="button-container">
+                <a href="#contact">Say Hello</a>
+                <a href="#about">About Me</a>
+            </div>
+        </div>
+        <img src="[your-image-url]" alt="[Your Name]">
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <ul>
-                <li><strong>Programming Languages:</strong> Dart (Flutter), Python, Java</li>
-                <li><strong>Web Development:</strong> HTML, CSS</li>
-                <li><strong>Legal Research & Analysis</strong></li>
-                <li><strong>Arbitration Procedures</strong></li>
-                <li><strong>Virtual Assistance:</strong> Email and Calendar Management, Scheduling, Internet Research, and more</li>
-            </ul>
+    <section id="about" class="about">
+        <h3>About Me</h3>
+        <p>Hi! My name is [Your Name]. I am a [Your Profession], and I'm very passionate and dedicated to my work. With years of experience, I have acquired the skills and knowledge necessary to make your project a success.</p>
+        <a href="your-resume-link.pdf" class="button-container">Download CV</a>
+    </section>
+
+    <section id="skills" class="skills">
+        <h3>My Skills</h3>
+        <div class="progress-container">
+            <div>
+                <span>Website Design</span>
+                <div class="progress-bar">
+                    <div style="width: 86%;"></div>
+                </div>
+            </div>
+            <div>
+                <span>Mobile Application</span>
+                <div class="progress-bar">
+                    <div style="width: 90%;"></div>
+                </div>
+            </div>
+            <div>
+                <span>Game Programming</span>
+                <div class="progress-bar">
+                    <div style="width: 66%;"></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
-            <ul>
-                <li><strong>StuCommo:</strong> Developing a student accommodation app using Dart and Flutter</li>
-                <li><strong>Hackathon Project:</strong> Participated in a Power Learn Programme hackathon using Dart and Flutter</li>
-                <li><strong>UONLSPA Data Management:</strong> Managed data for the University of Nairobi Law Students' Professional Association</li>
-            </ul>
+    <section id="portfolio" class="portfolio">
+        <h3>Selected Works</h3>
+        <p>Check my portfolio</p>
+        <div class="gallery">
+            <img src="[portfolio-image-url-1]" alt="Portfolio Image 1">
+            <img src="[portfolio-image-url-2]" alt="Portfolio Image 2">
+            <img src="[portfolio-image-url-3]" alt="Portfolio Image 3">
+            <!-- Add more images as needed -->
         </div>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience">
-            <ul>
-                <li><strong>Law Student Intern:</strong> Wanyundi Kuchio Tindi</li>
-                <li><strong>Virtual Assistant:</strong> Certified through the ALX programme</li>
-                <li><strong>Intern:</strong> Beacon of Hope Hospital Kenya</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at: <a href="mailto:cornelius.ondego.co15@gmail.com">cornelius.ondego.co15@gmail.com</a></p>
-    </section>
+    <footer>
+        <p>&copy; [Your Name] | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
+
 
