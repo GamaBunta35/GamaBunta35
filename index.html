@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Links</title>
+    <title>[Your Name] - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,16 +52,33 @@
             margin-bottom: 40px;
         }
 
-        section#home {
+        section#about,
+        section#skills,
+        section#projects,
+        section#experience,
+        section#contact {
             text-align: center;
         }
 
-        section#home img {
+        section#about img {
             border-radius: 8px;
+            max-width: 200px;
+            margin-bottom: 20px;
         }
 
-        section#gallery {
-            text-align: center;
+        .skills, .projects, .experience {
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .skills ul, .projects ul, .experience ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li, .projects ul li, .experience ul li {
+            margin: 10px 0;
         }
 
         .gallery {
@@ -87,69 +104,69 @@
             height: auto;
             display: block;
         }
-
-        section#menu {
-            text-align: center;
-        }
-
-        .menu ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .menu ul li {
-            margin: 10px 0;
-        }
-
-        .menu ul li a {
-            text-decoration: none;
-            color: #4CAF50;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .menu ul li a:hover {
-            color: #333;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Image Links</h1>
+        <h1>[Your Name]</h1>
+        <p>Software Developer | Law Student | Virtual Assistant</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to our website! Explore the sections below.</p>
-        <a href="https://www.example.com/pets"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUQwjofIjX01RZoTwkSDT46D7FnZzsEAmmbw&usqp=CAU" alt="Pets Image"></a>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="[your-image-url]" alt="[Your Name]">
+        <p>Hello! I am [Your Name], a law student with a passion for software development, alternative dispute resolution, and virtual assistance. I am committed to continuous learning and applying my diverse skill set to make a positive impact.</p>
     </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <a href="https://www.example.com/cats"><img src="https://preview.redd.it/silly-cat-v0-ket76730w05a1.jpg?width=640&crop=smart&auto=webp&s=c3e02999215de3c516ea3f27d5b19ad63e6a5d5c" alt="Cats Image 1"></a>
-            <a href="https://www.example.com/cats"><img src="https://static.wikia.nocookie.net/silly-cat/images/3/39/Site-community-image/revision/latest?cb=20230715182629" alt="Cats Image 2"></a>
-            <a href="https://www.example.com/cats"><img src="https://preview.redd.it/battle-of-silly-cats-1942-colorized-v0-tu6h1wlc2anb1.png?auto=webp&s=0a427d82d446e56ad3d5b34bb3c0a39897802084" alt="Cats Image 3"></a>
-        </div>
-    </section>
-
-    <section id="menu">
-        <h2>Menu</h2>
-        <div class="menu">
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
             <ul>
-                <li><a href="https://i.pinimg.com/originals/18/1a/fe/181afeedeba499880364ff716d9cc343.jpg">Persian</a></li>
-                <li><a href="https://static.wikia.nocookie.net/disney/images/7/7d/Profile_-_Si_and_Am.jpeg/revision/latest?cb=20190314123627">Siamese</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Maine_Coon">Maine Coon</a></li>
+                <li><strong>Programming Languages:</strong> Dart (Flutter), Python, Java</li>
+                <li><strong>Web Development:</strong> HTML, CSS</li>
+                <li><strong>Legal Research & Analysis</strong></li>
+                <li><strong>Arbitration Procedures</strong></li>
+                <li><strong>Virtual Assistance:</strong> Email and Calendar Management, Scheduling, Internet Research, and more</li>
             </ul>
         </div>
     </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <ul>
+                <li><strong>StuCommo:</strong> Developing a student accommodation app using Dart and Flutter.</li>
+                <li><strong>Hackathon Project:</strong> Participated in a Power Learn Programme hackathon using Dart and Flutter.</li>
+                <li><strong>UONLSPA Data Management:</strong> Managed data for the University of Nairobi Law Students' Professional Association.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <ul>
+                <li><strong>Law Student Intern:</strong> Wanyundi Kuchio Tindi.</li>
+                <li><strong>Virtual Assistant:</strong> Certified through the ALX programme.</li>
+                <li><strong>Intern:</strong> Beacon of Hope Hospital Kenya.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at: <a href="mailto:[your-email@example.com]">[your-email@example.com]</a></p>
+    </section>
 </body>
 </html>
+
